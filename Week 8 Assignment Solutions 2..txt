@@ -1,0 +1,63 @@
+﻿Question.1
+for(int i = 0; i < n; i++) {
+for(int j = 0; j * j < n; j++) {
+cout << “PhysicsWallah ”;
+}
+}
+Output: O(n * sqrt(n))
+
+
+
+
+
+
+Question.2
+int c = 0;
+for(int i = 0; i < n; i++) {
+for(int j = 1; j < n; j *= 2) {
+c++;
+}
+}
+Solution: O(n log n)
+
+
+
+
+
+
+Question.3
+int c = 0;
+for(int i = 0; i < n; i++) {
+for(int j = 1; j * j < n; j *= 2) {
+c++;
+}
+}
+Output: logN.
+
+
+
+
+
+
+Question.4
+int c = 0;
+for(int i = n; i > 0; i /= 2) {
+for(int j = 0; j < i; j ++) {
+c++;
+}
+}
+Output: O(n)
+
+
+
+
+
+
+Question.5
+int c = 0;
+for(int i = 1; i < n; i*=2) {
+for(int j = n; j > i; j--) {
+c++;
+}
+}
+Output: O(nlogn)
